@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+/* Body */
+body {
+    background-color: #0d1a2d;
+
+}
+
+/* BIG CONTAINER */
+.big-container {
+    position: relative;
+    height: 100vh;
+}
+                        /* CONTAINER */
+.container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: minmax(20vw);
+    grid-template-rows: repeat(auto-fill,1fr);
+    justify-content: center;
+    align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+    padding: 1.5em;
+    border-radius: 15px;
+    background-color: #142643;
+    box-shadow: -2px 20px 21px 5px rgba(2, 16, 28, 0.61);
+}
+                            /* CARD HEAD */
+.card_head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.card_head:hover {
+   background-color: #1aeaee;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.card_head img {
+    width: 100%;
+    transition: 1s;
+    border-radius: 5px;
+}
+.card_head:hover >img {
+    opacity: .5;
+}
+
+.card_head-icon{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    align-self: center;
+    transform: scale(3);
+}
+
+.card_head:hover > .card_head-icon{
+    visibility: visible;
+    opacity: 1;
+} 
+
+                                    /* CARD MAIN */
+.card_main {
+    border-bottom: 1px solid #8d9db767;
+    
+}
+.card_main-head h3 {
+    color: #F6FDFF;
+    letter-spacing: 1px;
+}
+.card_main-head:hover > h3 {
+    color: #1aeaee;
+    cursor: pointer;
+}
+.card_main-main {
+    color: #758eb6;
+    text-align: start;
+}
+.card_main-footer {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+.fa-brands::first-line {
+    font-weight: 900;
+    font-size: 15px;
+    color: #1aeaee;
+    
+}
+.fa-solid::first-line {
+    font-weight: 900;
+    font-size: 11px;
+    color: #8d9db7;
+}
+
+                                    /*CARD  FOOTER */
+.card_footer {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+   
+}
+.card_footer img {
+    align-self: center;
+    width: 13%;
+    height: 70%;
+    margin-right: 20px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+.card_name {
+    color: white;
+}
+.card_name:hover {
+    color: #1aeaee;
+    cursor: pointer;
+}
